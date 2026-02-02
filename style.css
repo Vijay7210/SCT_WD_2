@@ -15,7 +15,7 @@ body {
 
 .stopwatch-container {
     background: white;
-    width: 350px;
+    width: 360px;
     padding: 25px;
     border-radius: 15px;
     text-align: center;
@@ -24,46 +24,55 @@ body {
 
 .stopwatch-container h2 {
     margin-bottom: 15px;
-    color: #333;
 }
 
 #display {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
     margin: 20px 0;
-    color: #222;
 }
 
 /* BUTTONS */
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .buttons button {
-    padding: 8px 14px;
+    padding: 10px 25px;
     border: none;
     border-radius: 8px;
+    color: white;
     cursor: pointer;
     font-size: 14px;
-    color: white;
 }
 
-.buttons button:nth-child(1) { background: #4caf50; }
-.buttons button:nth-child(2) { background: #ff9800; }
-.buttons button:nth-child(3) { background: #f44336; }
-.buttons button:nth-child(4) { background: #2196f3; }
+.toggle {
+    background: #4caf50;
+}
+
+.reset {
+    background: #f44336;
+}
+
+.lap {
+    background: #2196f3;
+}
 
 /* LAPS */
+.laps-wrapper {
+    max-height: 160px;
+    overflow-y: auto;
+}
+
 ul {
     list-style: none;
-    max-height: 150px;
-    overflow-y: auto;
 }
 
 ul li {
     padding: 6px;
-    font-size: 14px;
     border-bottom: 1px solid #ddd;
+    font-size: 14px;
 }
+
