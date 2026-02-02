@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stopwatch App</title>
+    <title>Stopwatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,15 +13,17 @@
     <div id="display">00:00:00</div>
 
     <div class="buttons">
-        <button onclick="start()">Start</button>
-        <button onclick="pause()">Pause</button>
-        <button onclick="reset()">Reset</button>
-        <button onclick="lap()">Lap</button>
+        <button class="toggle" onclick="toggleStartPause()">Start</button>
+        <button class="reset" onclick="reset()">Reset</button>
+        <button class="lap" onclick="lap()">Lap</button>
     </div>
 
-    <ul id="laps"></ul>
+    <div class="laps-wrapper">
+        <ul id="laps"></ul>
+    </div>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
